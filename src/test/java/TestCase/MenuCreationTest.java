@@ -27,7 +27,7 @@ public class MenuCreationTest extends BaseClass{
 		driver.navigate().refresh();
 		Thread.sleep(2000);
 		for(WebElement el:mp.getLs()){
-//			System.out.println("Brand name is:"+el.getText());
+		System.out.println("Brand name is:"+el.getText());
 			if(el.getText().equalsIgnoreCase("Test"))
 				el.click();
 			break;
