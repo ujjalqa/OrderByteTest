@@ -71,9 +71,9 @@ public class CreateWebSiteTest extends BaseClass{
 //		cp.getInn().sendKeys("500");
 //		cp.getChecking_account().sendKeys("ABCD00001");
 //		cp.getSave_acq().click();
-//		Thread.sleep(2000);
+//		Thread.sleep(2000);commented these lines
 		((JavascriptExecutor) driver)
-	     .executeScript("window.scrollTo(0, document.body.scrollHeight)");
+	     .executeScript("window.scrollTo(0, document.body.scrollHeight)");//scroll to the bottom
 //		cp.getNext2().click();
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", cp.getNext2());
 		Thread.sleep(2000);
