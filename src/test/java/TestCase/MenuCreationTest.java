@@ -13,7 +13,7 @@ import pages.MenuCreationPage;
 public class MenuCreationTest extends BaseClass{
 	MenuCreationPage mp;
 	Actions act;
-	@Test(priority=3,description="Verify the creation of menu",enabled=true)
+	@Test(priority=3,description="Verify the creation of menu",enabled=false)
 	public void createMenu() throws InterruptedException{
 //		mp.clickMenu();
 		Thread.sleep(4000);
@@ -39,7 +39,7 @@ public class MenuCreationTest extends BaseClass{
 		
 		
 	}
-	@Test(priority=4,description="Category can be created",enabled=true)
+	@Test(priority=4,description="Category can be created",enabled=false)
 	public void createCategory() throws InterruptedException{
 		Thread.sleep(2000);
 		((JavascriptExecutor) driver).executeScript(
@@ -58,15 +58,6 @@ public class MenuCreationTest extends BaseClass{
 		mp.getNext1().click();
 		Thread.sleep(2000);
 	
-	}
-	@Test(priority=5,description="Verify that website can be created",enabled=true)
-	public void createWebSite() throws InterruptedException{
-		Thread.sleep(2000);
-		mp.getName().sendKeys("UjjalTest");
-		((JavascriptExecutor) driver).executeScript(
-	            "arguments[0].scrollIntoView();", mp.getNext());
-		mp.getNext().click();
-		Thread.sleep(2000);
 	}
 	
 	

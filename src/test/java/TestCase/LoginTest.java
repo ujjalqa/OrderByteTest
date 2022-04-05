@@ -13,7 +13,7 @@ public class LoginTest extends BaseClass{
 	LoginPage lp;
 	
 	
-	@Test(priority=1,description="Verify user is able to login into the application",enabled=true)
+	@Test(priority=1,description="Verify user is able to login into the application",enabled=false)
 	public void verify_login() throws InterruptedException{
 		lp=new LoginPage(driver);
 		lp.getUserName();//enters the user name

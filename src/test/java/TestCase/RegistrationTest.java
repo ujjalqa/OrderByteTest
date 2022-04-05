@@ -13,7 +13,7 @@ public class RegistrationTest extends BaseClass {
 	JavascriptExecutor executor;
 	
 	RegistrationPage rp;
-	@Test(priority=2,description="registration Step-1",enabled=true)
+	@Test(priority=2,description="registration Step-1",enabled=false)
 	public void registerStep1() throws InterruptedException{
 		rp=new RegistrationPage(driver);
 		executor = (JavascriptExecutor) driver; 
