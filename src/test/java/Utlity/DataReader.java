@@ -55,6 +55,10 @@ public static String getCategory(){
 	String cat=RandomStringUtils.randomAlphabetic(5);
 	return ("TestCategory_"+cat);
 }
+public static String getOptionGroupName(){
+	String cat=RandomStringUtils.randomAlphabetic(5);
+	return ("TestOptionGroup_"+cat);
+}
 }
 
 

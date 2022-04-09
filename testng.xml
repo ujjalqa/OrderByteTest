@@ -11,6 +11,7 @@
       <class name="TestCase.RegistrationTest"/>
       <class name="TestCase.MenuCreationTest"/>
        <class name="TestCase.CreateWebSiteTest"/>
+       <class name="TestCase.DashboardTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
