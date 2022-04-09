@@ -18,7 +18,7 @@ public class CreateWebSiteTest extends BaseClass{
 	CreateWebSitePage cp;
 	DataReader2 dr;
 	Select se,se1,se2,se3,se4;
-	@Test(priority=6,description="Verify that website can be customized",enabled=true)
+	@Test(priority=6,description="Verify that website can be customized",enabled=false)
 	public void getWebSite() throws IOException, InterruptedException{
 		cp=new CreateWebSitePage(driver);
 		dr=new DataReader2();
