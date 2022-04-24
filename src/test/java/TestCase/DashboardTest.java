@@ -17,7 +17,7 @@ public class DashboardTest extends BaseClass {
 	LoginPage lp;
 	DashboardPage dp;
 	DataReader dr;
-	@Test(priority=7,description="verify Menu Control option")
+	@Test(priority=7,description="verify Menu Control option",enabled=false)
 	public void menuControl() throws IOException, InterruptedException{
 		lp=new LoginPage(driver);
 		dp=new DashboardPage(driver);
