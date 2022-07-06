@@ -1,5 +1,7 @@
 package TestCase;
 
+import java.io.IOException;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -13,14 +15,18 @@ import pages.MenuCreationPage;
 public class MenuCreationTest extends BaseClass{
 	MenuCreationPage mp;
 	Actions act;
+	DataReader dr;
 	@Test(priority=3,description="Verify the creation of menu",enabled=false)
-	public void createMenu() throws InterruptedException{
+	public void createMenu() throws InterruptedException, IOException{
+		dr=new DataReader();
+		driver.get(dr.getUrl());
 //		mp.clickMenu();
 		Thread.sleep(4000);
 		 act=new Actions(driver);
 		act.moveToElement(mp.getBrand()).click().build().perform();
-		
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", mp.getBrand());
 //		mp.getBrand().click();
+		Thread.sleep(2000);
 		mp.getMain_vendor().sendKeys("Test");
 		mp.getOk_btn().click();
 		Thread.sleep(2000);

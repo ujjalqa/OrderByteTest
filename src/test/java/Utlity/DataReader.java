@@ -59,6 +59,11 @@ public static String getOptionGroupName(){
 	String cat=RandomStringUtils.randomAlphabetic(5);
 	return ("TestOptionGroup_"+cat);
 }
+public static String getsiteName(){
+	String name=RandomStringUtils.randomAlphabetic(4);
+	return ("Test_"+name);
+	
+}
 }
 
 

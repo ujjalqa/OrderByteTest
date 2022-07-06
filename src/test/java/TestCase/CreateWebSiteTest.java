@@ -21,11 +21,11 @@ public class CreateWebSiteTest extends BaseClass{
 	@Test(priority=6,description="Verify that website can be customized",enabled=false)
 	public void getWebSite() throws IOException, InterruptedException{
 		cp=new CreateWebSitePage(driver);
-		dr=new DataReader2();
-		driver.get(dr.getUrl());
-		cp.getUsername().sendKeys(dr.getUsername());
-		cp.getPwd().sendKeys(dr.getPassword());
-		cp.getSend().click();
+//		dr=new DataReader2();
+//		driver.get(dr.getUrl());
+//		cp.getUsername().sendKeys(dr.getUsername());
+//		cp.getPwd().sendKeys(dr.getPassword());
+//		cp.getSend().click();
 		Thread.sleep(2000);
 		((JavascriptExecutor) driver)
 	     .executeScript("window.scrollTo(0, document.body.scrollHeight)");

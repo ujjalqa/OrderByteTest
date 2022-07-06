@@ -12,7 +12,7 @@ import pages.ReportPage;
 public class ReportTest extends BaseClass {
 	ReportPage rp;
 	OrderHistoryPage op;
-	@Test(priority=10,description="Verify Report page")
+	@Test(priority=10,description="Verify Report page",enabled=false)
 	public void getReport() throws InterruptedException{
 		rp=new ReportPage(driver);
 		op=new OrderHistoryPage(driver);

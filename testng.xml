@@ -15,6 +15,7 @@
        <class name="TestCase.RestuarantTest"/>
        <class name="TestCase.OrderHistoryTest"/>
         <class name="TestCase.ReportTest"/>
+        <class name="TestCase.MenuSwitchTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

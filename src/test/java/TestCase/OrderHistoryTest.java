@@ -18,7 +18,7 @@ OrderHistoryPage op;
 RestuaranatPage rp;
 LoginPage lp;
 DataReader dr;
-@Test(priority=9,description="Verify Order History page")
+@Test(priority=9,description="Verify Order History page",enabled=false)
 public void searchOrder() throws InterruptedException, IOException{
 	op=new OrderHistoryPage(driver);
 	lp=new LoginPage(driver);

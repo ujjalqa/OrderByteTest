@@ -23,13 +23,14 @@ public class DashboardTest extends BaseClass {
 		dp=new DashboardPage(driver);
 		dr=new DataReader();
 		driver.get(dr.getUrl());
-		lp.getUserName();
-		lp.getPassword();
-		lp.clickLogin();
+//		lp.getUserName();
+//		lp.getPassword();
+//		lp.clickLogin();
 		Thread.sleep(2000);
+		Actions act=new Actions(driver);
 //		dp.getMenu().click();
 //		Thread.sleep(1000);
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", dp.getMenu_cntrl());
+		act.moveToElement(dp.getMenu_cntrl()).click().build().perform();
 //		dp.getMenu_cntrl().click();
 		Thread.sleep(2000);
 		dp.getBrand_select().click();
@@ -37,9 +38,9 @@ public class DashboardTest extends BaseClass {
 		((JavascriptExecutor) driver)
 	     .executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		dp.getEdit_category().click();
-		Thread.sleep(1000);
-		((JavascriptExecutor) driver)
-	     .executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		Thread.sleep(3000);
+		((JavascriptExecutor) driver).executeScript(
+	            "arguments[0].scrollIntoView();", dp.getSave());
 		dp.getOption_grp().click();
 		Thread.sleep(1000);
 		dp.getOption_grp_text().sendKeys(Keys.chord(Keys.COMMAND, Keys.chord("a")));
